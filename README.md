@@ -21,7 +21,6 @@ print(cd(nums,k))
 ## Majority elements in list
 
 ```
-import math
 nums=[1,2,1]
 hashmap={}
 res=[]
@@ -31,8 +30,8 @@ for i in nums:
   else:
     hashmap[i]+=1
 for i,j in hashmap.items():
-  if j>math.floor(len(nums)/3):
-    res.append(i)
+  if j>len(nums)//3:
+    res+=i
 print(res)
 ```
 
